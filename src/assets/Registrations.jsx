@@ -19,7 +19,7 @@ function Registrations() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/register", {
+      const response = await fetch("https://msd-backend-1.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -179,3 +179,4 @@ function Registrations() {
 }
 
 export default Registrations;
+
